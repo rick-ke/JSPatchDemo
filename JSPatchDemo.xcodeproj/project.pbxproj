@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CCD6572978E277857D855ED /* Pods_JSPatchDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCBD99EE6CE2A5D3CE0F2A5 /* Pods_JSPatchDemo.framework */; };
 		A50483CA22704B6C000F560E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50483C922704B6C000F560E /* AppDelegate.m */; };
 		A50483CD22704B6C000F560E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A50483CC22704B6C000F560E /* ViewController.m */; };
 		A50483D022704B6C000F560E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50483CE22704B6C000F560E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28D09D47C8C43962598A3856 /* Pods-JSPatchDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatchDemo.debug.xcconfig"; path = "Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A50483C522704B6C000F560E /* JSPatchDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSPatchDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50483C822704B6C000F560E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A50483C922704B6C000F560E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A50483D422704B6D000F560E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50483D622704B6D000F560E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50483D722704B6D000F560E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFCBD99EE6CE2A5D3CE0F2A5 /* Pods_JSPatchDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JSPatchDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F67206206EE805FDC4CACCFE /* Pods-JSPatchDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JSPatchDemo.release.xcconfig"; path = "Target Support Files/Pods-JSPatchDemo/Pods-JSPatchDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CCD6572978E277857D855ED /* Pods_JSPatchDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				A50483C722704B6C000F560E /* JSPatchDemo */,
 				A50483C622704B6C000F560E /* Products */,
+				D00C89788DFFF275F761F107 /* Pods */,
+				AF5851D24F725D88EB25D6A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,24 @@
 			path = JSPatchDemo;
 			sourceTree = "<group>";
 		};
+		AF5851D24F725D88EB25D6A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFCBD99EE6CE2A5D3CE0F2A5 /* Pods_JSPatchDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D00C89788DFFF275F761F107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28D09D47C8C43962598A3856 /* Pods-JSPatchDemo.debug.xcconfig */,
+				F67206206EE805FDC4CACCFE /* Pods-JSPatchDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A50483DB22704B6D000F560E /* Build configuration list for PBXNativeTarget "JSPatchDemo" */;
 			buildPhases = (
+				C06CEA702540D46CBBE176A9 /* [CP] Check Pods Manifest.lock */,
 				A50483C122704B6C000F560E /* Sources */,
 				A50483C222704B6C000F560E /* Frameworks */,
 				A50483C322704B6C000F560E /* Resources */,
@@ -135,6 +161,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C06CEA702540D46CBBE176A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JSPatchDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A50483C122704B6C000F560E /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		A50483DC22704B6D000F560E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28D09D47C8C43962598A3856 /* Pods-JSPatchDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +351,7 @@
 		};
 		A50483DD22704B6D000F560E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67206206EE805FDC4CACCFE /* Pods-JSPatchDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
